@@ -1,0 +1,13 @@
+<ion-content>
+  <div class="container">
+    <h1 size="large" class="letras-inicio">¡Bienvenido!</h1>
+    <ion-avatar id="avatar" #avatar>
+      <img alt="Profile Photo Default"
+        src="https://w7.pngwing.com/pngs/802/786/png-transparent-google-account-google-search-customer-service-google-logo-login-button-blue-sphere-car-rental-thumbnail.png"
+        class="avatar-image" />
+    </ion-avatar>
+    <hr>
+    <ion-label style="color: rgb(255, 255, 255);">{{ userService.currentUserEmail }}</ion-label>
+    <ion-button class="custom-button" expand="full" (click)="logout()">Cerrar Sesión</ion-button>
+  </div>
+</ion-content>

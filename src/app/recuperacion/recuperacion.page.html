@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="ion-text-center ion-align-items-center">
+      <label class="letras-inicio">Recuperacion</label>
+      <hr>
+      <label class="letras-inicio-1">Ingresa tu correo<br>para recuperar contraseña</label>
+    </div>
+    <hr>
+    <div class="ion-text-center ion-align-items-center">
+      <ion-item class="custom-bg">
+        <ion-label position="floating">Correo electronico</ion-label>
+        <ion-input ></ion-input>
+      </ion-item>
+      <hr>
+      <ion-button class="custom-button" expand="full" (click)="mostrarAlertaRecuperacionEnviada()">Recuperar</ion-button>
+      <hr>
+      <ion-label>
+        <div>¿Recordaste tu contraseña?</div>
+        <hr>
+        <a [routerLink]="['/login']">Volver</a>
+      </ion-label>
+      <hr>
+      <hr>
+      
+    </div>
+  </div>
+</ion-content>

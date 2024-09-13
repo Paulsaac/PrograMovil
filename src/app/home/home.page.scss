@@ -1,0 +1,54 @@
+.container {
+  background-color: #16423C;
+  color: #E9EFEC;
+  font: family 1px;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.avatar-image {
+  max-width: 150%;
+  border-radius: 50%;
+  margin-bottom: 20px; /* Agregar espacio arriba de la imagen */
+}
+
+.ion-label {
+  margin-top: 20px; /* Agregar espacio arriba del correo del usuario */
+}
+
+.letras-inicio {
+  font-size: 200%;
+  margin-top: 20px; /* Agregar espacio arriba del título "Bienvenido" */
+}
+
+.custom-button {
+  border-radius: 4px;
+  border: 1px solid #E9EFEC;
+  background-color: transparent !important;
+  color: #E9EFEC;
+  margin-top: 20px; /* Agregar espacio arriba de los botones */
+  max-width: 80%;
+}
+
+.custom-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #1dc717;
+}
+
+ion-button {
+  --background: transparent !important;
+  --border-radius: 0 !important;
+  --border-width: 0 !important;
+  --color: #000 !important;
+  --padding-start: 10px;
+  --padding-end: 10px;
+}
+
+ion-item ion-label {
+  text-align: center;
+}

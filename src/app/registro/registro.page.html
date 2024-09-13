@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="ion-text-center ion-align-items-center">
+      <label class="letras-inicio">Crear nueva cuenta</label>
+      <hr>
+    </div>
+    <div class="ion-text-center ion-align-items-center">
+      <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
+      <h5 class="ion-text-center text-left">Correo electronico</h5>
+      <ion-item class="custom-bg">
+        <ion-label position="floating">Correo electronico</ion-label>
+        <ion-input type="text" formControlName="correo"></ion-input>
+      </ion-item>    
+      <h5 class="ion-text-center text-left">Contraseña</h5>
+      <ion-item class="custom-bg">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="text" formControlName="password" type="password" ></ion-input>
+      </ion-item>  
+      <h5 class="ion-text-center text-left">Confirmar contraseña</h5>
+      <ion-item class="custom-bg">
+        <ion-label position="floating">Confirmar contraseña</ion-label>
+        <ion-input formControlName="confirmacionPassword" type="password"></ion-input>
+      </ion-item>
+    </form>
+      <hr>
+      <hr>
+      <a [routerLink]="['/login']">¿Ya estas registrado?</a>
+      <hr>
+      <hr>
+      <ion-button class="custom-button" expand="full" (click)="guardar()">Registrarse</ion-button>
+    </div>
+  </div>
+</ion-content>
